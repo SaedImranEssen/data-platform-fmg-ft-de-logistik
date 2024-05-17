@@ -1,0 +1,15 @@
+```sqlx
+config {
+  type: "view",
+  schema: "fmg_sap",
+  name: "my_view"
+}
+
+SELECT
+  PVA,
+  DRERZ
+FROM
+  ${ref("JDTBZANG")}
+WHERE
+  partition_date = "2024-05-17";
+```

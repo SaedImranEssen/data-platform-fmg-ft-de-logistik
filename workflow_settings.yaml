@@ -1,0 +1,5 @@
+warehouse:
+  type: "bigquery"
+  project_id: "fmg-dcx-funke-connect"
+default_database: "fmg_sap"
+default_schema: "fmg_sap"

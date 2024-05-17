@@ -1,0 +1,14 @@
+**Add the following content to `test_cases.sqlx`**:
+```sqlx
+config {
+  type: "assertion",
+  schema: "assertions"
+}
+
+SELECT
+  *
+FROM
+  ${ref("my_transformed_table")}
+WHERE
+  transaction_count IS NULL;
+```
