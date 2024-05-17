@@ -2,7 +2,7 @@ config {
   type: "declaration",
   database: "fmg_sap",
   schema: "stammdaten",
-  name: "JDTBZANG",
+  name: "table_JDTBZANG",
 }
 
 
