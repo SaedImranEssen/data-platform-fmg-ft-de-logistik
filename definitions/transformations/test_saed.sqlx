@@ -1,12 +1,16 @@
 config {
   type: "table",
-  schema: "transformations",
-  name: "kpi_01"
+  name: "kpi_01",
+  schema: "transforms",
+  tags: "table_Kpi_01",
+  description: "Transformierte Rohdaten. Bereinigung der Namen etc..",
 }
 
-SELECT * FROM  ${ref("table_jdtbzang")}
 
---SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
+#SELECT * FROM ${ref("JDTBZANG")}
 
---SELECT * FROM {{ ref('JDTBZANG') }}
+--SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.dataform.table_jdtbzang`
+
+
+
 
