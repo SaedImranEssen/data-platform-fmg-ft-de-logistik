@@ -1,6 +1,5 @@
 config {
   type: "declaration",
-  database: "fmg_sap",
   schema: "stammdaten",
   name: "JDTBZANG",
 }

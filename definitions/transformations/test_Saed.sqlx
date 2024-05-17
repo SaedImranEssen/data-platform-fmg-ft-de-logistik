@@ -1,10 +1,10 @@
 config {
   type: "table",
   schema: "stammdaten",
-  name: "my_transformed_table"
+  name: "JDTBZANG"
 }
 
---SELECT * FROM  ${ref("JDTBZANG")}
+SELECT * FROM  ${ref("JDTBZANG")}
 
 --SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JVTLIEFBAR`
 
