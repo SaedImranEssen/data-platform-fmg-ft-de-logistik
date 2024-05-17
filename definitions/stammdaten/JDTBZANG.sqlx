@@ -1,8 +1,10 @@
 config {
-  type: "declaration",
   database: "fmg_sap",
-  schema: "stammdaten",
-  name: "table_JDTBZANG",
+  type: "table",
+  schema: "stammdaten", 
+  name: 'table_JDTBZANG',
+  tags: ["stammdaten","schedule_every_hour"],
+  description: "Contains information on the table"
 }
 
-
+SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
