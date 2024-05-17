@@ -1,7 +1,7 @@
 {
-  "defaultSchema": "dataform",
-  "assertionSchema": "dataform_assertions",
+  "defaultDatabase": "fmg-dcx-funke-connect",
+  "defaultSchema": "fmg_sap",
+  "assertion_schema": "assertions",
   "warehouse": "bigquery",
-  "defaultDatabase": "fmg_sap",
   "defaultLocation": "EU"
 }

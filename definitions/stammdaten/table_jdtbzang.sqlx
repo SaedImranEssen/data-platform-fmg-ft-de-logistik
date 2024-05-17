@@ -1,5 +1,5 @@
 config {
-    type: "table",
+  type: "table",
   name: "JDTBZANG",
   description: "Contains information on the table"
 }
@@ -8,5 +8,3 @@ SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
 
 
 
-
--- SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
