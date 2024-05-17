@@ -1,10 +1,9 @@
 config {
-    type: "table",
-    schema: "fmg_sap",
-    name: "my_transformed_table"
+  type: "table",
+  schema: "fmg_sap",
+  name: "my_transformed_table"
 }
 
-  ```sqlx
 SELECT
   PVA,
   DRERZ,
@@ -14,5 +13,4 @@ FROM
 WHERE
   partition_date = "2024-05-17"
 GROUP BY
-  PVA,
-  DRERZ; ```
+  PVA, DRERZ;
