@@ -4,8 +4,5 @@ config {
   name: "my_transformed_table"
 }
 
-
-
 -- SELECT * FROM  ${ref("JDTBZANG")}
 SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JVTLIEFBAR`
-

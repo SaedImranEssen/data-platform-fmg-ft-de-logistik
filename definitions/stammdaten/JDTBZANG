@@ -1,6 +1,6 @@
 config {
   type: "declaration",
-  database: "fmg_sap",
+  database: "fmg-dcx-funke-connect",
   schema: "fmg_sap",
   name: "JDTBZANG",
 }
