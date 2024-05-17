@@ -1,8 +1,11 @@
 config {
   type: "table",
-  schema: "fmg_sap",
+  schema: "stammdaten",
   name: "my_transformed_table"
 }
 
--- SELECT * FROM  ${ref("JDTBZANG")}
-SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JVTLIEFBAR`
+--SELECT * FROM  ${ref("JDTBZANG")}
+
+--SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JVTLIEFBAR`
+
+--SELECT * FROM {{ ref('JDTBZANG') }}
