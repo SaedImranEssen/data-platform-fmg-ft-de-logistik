@@ -1,0 +1,8 @@
+config {
+  type: "declaration",
+  database: "fmg_sap",
+  schema: "fmg_sap",
+  name: "JDTBZANG",
+}
+
+

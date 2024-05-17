@@ -1,0 +1,6 @@
+{
+  "name": "dev-workspace-data-platform-fmg-ft-de-logistik",
+  "dependencies": {
+    "@dataform/core": "2.8.3"
+  }
+}

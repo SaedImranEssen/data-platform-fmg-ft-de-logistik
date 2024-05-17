@@ -1,4 +1,0 @@
-warehouse: "bigquery"
-default_database: "fmg-dcx-funke-connect"
-default_schema: "fmg_sap"
-
