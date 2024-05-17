@@ -1,7 +1,7 @@
 config {
   type: "table",
   name: "kpi_01",
-  schema: "transforms",
+  schema: "transformation",
   tags: "table_Kpi_01",
   description: "Transformierte Rohdaten. Bereinigung der Namen etc.."
 }
