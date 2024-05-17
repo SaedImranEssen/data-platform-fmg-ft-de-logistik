@@ -1,0 +1,8 @@
+config {
+  type: "table",
+  name: "JITSTATMT",
+  description: "Contains information on the table"
+}
+
+SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JITSTATMT`
+

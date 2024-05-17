@@ -1,0 +1,7 @@
+config {
+  type: "table",
+  name: "JKAP",
+  description: "Contains information on the table"
+}
+
+SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JKAP`
