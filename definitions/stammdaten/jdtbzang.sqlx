@@ -2,7 +2,7 @@ config {
   database: "fmg_sap",
   type: "table",
   schema: "stammdaten", 
-  name: 'table_JDTBZANG',
+  name: 'table_jdtbzang',
   tags: ["stammdaten","schedule_every_hour"],
   description: "Contains information on the table"
 }

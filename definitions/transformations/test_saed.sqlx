@@ -1,10 +1,10 @@
 config {
   type: "table",
-  schema: "stammdaten",
+  schema: "transformations",
   name: "kpi_01"
 }
 
-SELECT * FROM  ${ref("table_JDTBZANG")}
+SELECT * FROM  ${ref("table_jdtbzang")}
 
 --SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
 
