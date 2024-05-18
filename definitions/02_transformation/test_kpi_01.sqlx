@@ -6,7 +6,18 @@ config {
   description: "Transformierte Rohdaten. Bereinigung der Namen etc.."
 }
 
-SELECT * FROM ${ref("JDTBZANG")}
+-- SELECT * FROM ${ref("JDTBZANG")}
+
+-- SELECT DISTINCT DRERZ, PVA FROM ${ref("JDTBZANG")}
+
+-- SELECT DISTINCT CONCAT(DRERZ, '_', PVA) AS DRERZ_PVA
+-- FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
+
+
+SELECT CONCAT(DRERZ, '_', PVA) AS DRERZ_PVA, COUNT(*) AS count
+FROM ${ref("JDTBZANG")}
+GROUP BY DRERZ_PVA
+
 
 /*
 
@@ -23,5 +34,7 @@ ORDER BY column_name,table_name
 
 
 */
+
+
 
 
