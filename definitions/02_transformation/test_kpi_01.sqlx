@@ -6,23 +6,39 @@ config {
   description: "Transformierte Rohdaten. Bereinigung der Namen etc.."
 }
 
--- SELECT * FROM ${ref("JDTBZANG")}
+SELECT * FROM ${ref("JKAP")}
 
 -- SELECT DISTINCT DRERZ, PVA FROM ${ref("JDTBZANG")}
 
 -- SELECT DISTINCT CONCAT(DRERZ, '_', PVA) AS DRERZ_PVA
 -- FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
 
+
+-- SELECT CONCAT(DRERZ, '_', PVA) AS DRERZ_PVA, COUNT(*) AS count_Fremde_Titel
+-- FROM ${ref("JKAP")}
+-- GROUP BY DRERZ_PVA
+
+
 /*
 
-SELECT CONCAT(DRERZ, '_', PVA) AS DRERZ_PVA, COUNT(*) AS count_Fremde_Titel
-FROM ${ref("JKAP")}
-GROUP BY DRERZ_PVA
+defination:
+a)Anteil Fremdtitel = Fremde Titel (definiert durch DRZ und PVA  ) in der eigenen Zustellung (zugestellte Menge exkl. Verwerfstücke)
+ dividiert durch Gesamtmenge zugestellte Exemplare an einem Tag in einger geografischer Einheit.
+
+
+1)Anteil Fremdtitel = Fremde Titel (definiert durch DRZ und PVA  )  in der eigenen Zustellung (zugestellte Menge exkl. Verwerfstücke)
+2)Gesamtmenge Titel
+3)Dataum
+4)geografischer
+
+Formula:  1/2 where same 3 and 4 
 
 
 
 
-SELECT table_name
+
+
+
 FROM `fmg-dcx-funke-connect.fmg_sap.INFORMATION_SCHEMA.COLUMNS`
 WHERE column_name IN ('PVA', 'DRERZ')
 GROUP BY table_name
@@ -37,13 +53,13 @@ ORDER BY column_name,table_name
 */
 
 
-
+/*
 SELECT table_name, column_name, data_type
 FROM `fmg-dcx-funke-connect.fmg_sap.INFORMATION_SCHEMA.COLUMNS`
 WHERE column_name IN ('PVA', 'DRERZ')
 ORDER BY column_name,table_name
 
-
+*/
 
 
 
