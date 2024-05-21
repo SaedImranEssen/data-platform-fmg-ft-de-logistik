@@ -6,7 +6,7 @@ config {
   description: "Transformierte Rohdaten. Bereinigung der Namen etc.."
 }
 
-SELECT * FROM ${ref("JKAP")}
+-- SELECT * FROM ${ref("JKAP")}
 
 -- SELECT DISTINCT DRERZ, PVA FROM ${ref("JDTBZANG")}
 
@@ -18,6 +18,11 @@ SELECT * FROM ${ref("JKAP")}
 -- FROM ${ref("JKAP")}
 -- GROUP BY DRERZ_PVA
 
+
+SELECT table_name, column_name, data_type
+FROM `fmg-dcx-funke-connect.fmg_sap.INFORMATION_SCHEMA.COLUMNS`
+WHERE column_name IN ('PVA', 'DRERZ')
+ORDER BY column_name,table_name
 
 /*
 
