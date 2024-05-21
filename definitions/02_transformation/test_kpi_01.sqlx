@@ -13,13 +13,14 @@ config {
 -- SELECT DISTINCT CONCAT(DRERZ, '_', PVA) AS DRERZ_PVA
 -- FROM `fmg-dcx-funke-connect.fmg_sap.JDTBZANG`
 
+/*
 
 SELECT CONCAT(DRERZ, '_', PVA) AS DRERZ_PVA, COUNT(*) AS count_Fremde_Titel
 FROM ${ref("JKAP")}
 GROUP BY DRERZ_PVA
 
 
-/*
+
 
 SELECT table_name
 FROM `fmg-dcx-funke-connect.fmg_sap.INFORMATION_SCHEMA.COLUMNS`
@@ -34,6 +35,7 @@ ORDER BY column_name,table_name
 
 
 */
+
 
 
 SELECT table_name, column_name, data_type
