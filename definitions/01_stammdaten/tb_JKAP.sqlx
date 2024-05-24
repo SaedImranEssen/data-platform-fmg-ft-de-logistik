@@ -5,4 +5,7 @@ config {
 }
 
 
+--SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JKAP`
+
+
 SELECT * FROM `fmg-dcx-funke-connect.fmg_sap.JKAP`
